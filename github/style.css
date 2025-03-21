@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+}
+label{
+    margin-top: 4%;
+    display: flex;
+    gap: 5px;
+    
+}
+input{
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    padding: 3%;
+}
+button{
+    background-color: bisque;
+    outline: none;
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+}
+main{
+    margin-top: 5%;
+    background-color:lightblue;
+    padding: 3%;
+    font-family: "Tektur", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+h1{
+    font-size: 30px;
+    margin-top: 15px;
+}
