@@ -40,6 +40,28 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    display: none;
+}
+nav{
+    height: 100px;
+    width: 100px;
+    border: 15px solid gray;
+    border-radius: 50%;
+    border-left-color: rgb(236, 213, 213);
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    display: none;
+
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 h1{
     font-size: 30px;
