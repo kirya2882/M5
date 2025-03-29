@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: var(--bg);
+      transition: background 0.4s;
+      perspective: 500px;
+    }
+    main{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        transform-style: preserve-3d;
+        font-size: 50px;
+        text-align: center;
+        transition: all 100s;
+    }
+    main:hover{
+        transform: rotateY(180deg);
+    }
+    .front, .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .front{
+        background: green;
+        transform: translateZ(10px);
+    }
+    .back{
+        background: blue;
+        transform: rotateY(180deg);
+    }
+</style>
+<body>
+    <main>
+        <div class="front">Front</div>
+        <div class="back">back</div>
+    </main>
+</body>
+</html>

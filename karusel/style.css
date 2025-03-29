@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+main{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+}
+nav{
+    overflow-x: hidden;
+}
+div{
+    display: flex;
+    gap: 10px;
+    transform: translateX(-90%);
+}
+img{
+    width: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
